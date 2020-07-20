@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+<!------------------------------------- CDM Links ------------------------------>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<!-- for a Responsive website - add this code -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- I have used few w3 css codes which can be found only in w3schools, so i add their link here -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<!-- give an external link for social media -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- for google fonts - add this code -->
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+
+<style>
+/*---------- About us CSS--------------*/
+h2,h3,h4,h5,h6 {font-family: "Oswald"}   /* headings other than h1 is oswald */
+
+body { 
+  font-family: Arial, Helvetica, sans-serif       /* body font */
+  img {margin-bottom: -7px                        /* image displayed padding & margin */
+  .w3-row-padding img {margin-bottom: 12px}
+}
+}
+
+.luman {
+font-family: 'Gotham ultra bold', cursive;
+font-size: 30px;
+}
+
+
+</style>
+<!-- Navbar will be inside Head -->
+<!--------------------------- NAV BAR ------------------------------>
+
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">  <!-- if yu need the text as dark,you need to write navbar light-->
+  <!-- Brand -->
+  <a class="navbar-brand luman" href="LUU.html">UNNrr</a>
+
+  <!-- Links -->
+ 
+  <ul class="navbar-nav ml-auto">    <!-- ml stands for Margin left, and if you need contents in right, add left -->
+    <li class="nav-item pt-2" >   <!-- pt upto 5 only, after tat it becomes auto-->
+      <a class="nav-link" href="LUU.html">Home</a>
+    </li>
+    <li class="nav-item pt-2">
+      <a class="nav-link" href="Luu_about.html">About</a>
+    </li>
+    <li class="nav-item pt-2">
+      <a class="nav-link" href="Luu_gallery.html">Gallery</a>
+    </li>
+    <li class="nav-item pt-2">
+      <a class="nav-link" href="Luu_blog.html">Blog</a>
+    </li>
+    <li class="nav-item pt-2">
+      <a class="nav-link" href="Luu_contact.html">Contact</a>
+    </li>
+
+  </ul>
+</nav>
+</head>
+
+<!----------------------- NAV BAR ends here ----------------------->
+
+
+<!-- !PAGE CONTENT! -->
+
+<body>
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div>
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <br>
+  <h1 class="w3-xxxlarge"><b>Gallery</b></h1>
+  <!--<h1><b>Gallery</b></h1> -->
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Tap for white space</button></p>
+</header>
+</div>
+
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="material/7.jpg" style="width:100%">
+    <img src="material/8.jpg" style="width:100%">
+    <img src="material/6.jpg" style="width:100%">
+    <img src="material/Eyj_mar27.fix.jpg" style="width:100%">
+    <img src="material/jun4_sakura.jpg" style="width:100%">
+    <!--<img src="Images 1303/r6.jpg" style="width:100%">-->
+  </div>
+
+  <div class="w3-third">
+    <img src="material/cuu_may.png" style="width:100%">
+    <img src="material/cuu_tym1.png" style="width:100%">
+    <img src="material/cuu_nam.png" style="width:100%">
+    
+   <!-- <img src="Images 1303/p6.jpg" style="width:100%">-->
+  </div>
+
+  <div class="w3-third">
+    <img src="material/cuu_tym.png" style="width:100%">
+    <img src="material/cuu_xedap.png" style="width:100%">
+    <img src="material/cuu_c.png" style="width:100%">
+  
+  </div>
+</div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- java for toggle button for spacing between images (optional)-->
+
+<script>
+// Toggle grid padding
+function myFunction() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else { 
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
+</script>
+</body>
+</html>
+
